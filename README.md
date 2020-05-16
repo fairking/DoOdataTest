@@ -7,7 +7,7 @@ List of tests:
 - OK `https://localhost:5001/odata/weatherforecast?$orderby=temperatureF`
 - OK `https://localhost:5001/odata/weatherforecast?$filter=summary eq 'Warm'`
 - OK `https://localhost:5001/odata/weatherforecast?$select=id,summary`
-- ERROR `https://localhost:5001/odata/weatherforecast?$apply=groupby((summary), aggregate(temperatureC with average as total))`
+- ERROR `https://localhost:5001/odata/weatherforecast?$apply=groupby((summary), aggregate(temperatureC with average as total))` (Bug: [#13](https://github.com/DataObjects-NET/dataobjects-net/issues/13))
 - OK `https://localhost:5001/odata/weatherforecast?$filter=town eq 'London'`
 
 Related issues: 
