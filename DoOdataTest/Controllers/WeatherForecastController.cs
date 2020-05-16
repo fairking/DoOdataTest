@@ -3,8 +3,6 @@ using DoOdataTest.Entities;
 using DoOdataTest.ViewModels;
 using Microsoft.AspNet.OData;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using System.Linq;
 using Xtensive.Orm;
 
 namespace DoOdataTest.Controllers

@@ -35,7 +35,12 @@ namespace DoOdataTest
 
                                 var rng = new Random();
 
-                                var entities = Enumerable.Range(1, 25).Select(index => new WeatherForecast
+                                var town1 = new Town("London");
+                                var town2 = new Town("New York");
+                                var town3 = new Town("Sidney");
+                                var allTowns = new[] { town1, town2, town3 };
+
+                                var entities = Enumerable.Range(1, 25).Select(index => new WeatherForecast(allTowns[rng.Next(allTowns.Length)])
                                 {
                                     Date = DateTime.Now.AddDays(index),
                                     TemperatureC = rng.Next(-20, 55),
